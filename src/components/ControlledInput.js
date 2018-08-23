@@ -1,5 +1,4 @@
-// Code ControlledInput Component Here
-class Form extends Component {
+class ControlledInput extends Component {
   state = {
     firstName: "John",
     lastName: "Henry"
@@ -10,13 +9,13 @@ class Form extends Component {
       firstName: event.target.value
     })
   }
-   
+
   handleLastNameChange = event => {
     this.setState({
       lastName: event.target.value
     })
   }
- 
+
   render() {
     return (
       <form>
@@ -26,3 +25,5 @@ class Form extends Component {
     )
   }
 }
+
+export default ControlledInput
